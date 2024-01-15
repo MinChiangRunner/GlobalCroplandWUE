@@ -68,7 +68,6 @@ def WUE_Calculate(params):
 
     wue = np.float32(nppdata*1./etdata)
     nppmeta.update(compress='lzw', nodata=-1, dtype='float32')
-    # outfile = '/mnt/jim/XDA19030203Share/GPP/WUE_V2023/WUE_NPP_08/WUE.all.2001.test.tif'
     write_raster(WUEfile, wue, nppmeta)
 
 
